@@ -98,7 +98,7 @@ export async function POST(request: Request) {
       .join("\n\n---\n\n");
 
     const { text } = await generateText({
-      model: groq("llama-3.3-70b-versatile"),
+      model: groq("openai/gpt-oss-120b"),
       temperature: 0.2,
       maxOutputTokens: 700,
       system: [
